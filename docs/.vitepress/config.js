@@ -100,7 +100,7 @@ export default {
         ],
 
         editLink: {
-            pattern: 'https://github.com/sharanvelu/dockr-docs/tree/master/src/:path',
+            pattern: 'https://github.com/sharanvelu/dockr-documentation/tree/master/src/:path',
             text: 'Edit this page on GitHub'
         },
 
