@@ -12,16 +12,17 @@ export default {
     themeConfig: {
         logo: "/assets/small.png",
         siteTitle: "DockR Docs",
+
         nav: [
-            {text: "About", link: "/about"},
-            {text: "Contact", link: "/contact"},
-            {text: "Guide", link: "/guide"},
-            {text: "Configs", link: "/configs"},
+            {text: "About", link: "/docs/introduction"},
+            {text: "Contact", link: "/contact-us"},
             {text: "Changelog", link: "/changelog"},
         ],
+
         socialLinks: [
             {icon: "github", link: "https://github.com/sharanvelu/dockr"},
         ],
+
         sidebar: [
             {
                 text: "Overview",
@@ -97,10 +98,12 @@ export default {
                 ],
             },
         ],
+
         editLink: {
-            pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+            pattern: 'https://github.com/sharanvelu/dockr-docs/tree/master/src/:path',
             text: 'Edit this page on GitHub'
         },
+
         footer: {
             message: "Released under the MIT License.",
             copyright: "Copyright © 2022-present DockR",
