@@ -6,8 +6,11 @@ export default {
     cleanUrls: 'without-subfolders',
     srcDir: '../src',
     outDir: './.build',
+    head: [
+        ['link', {rel: "icon", sizes: "16x16", href: "small.ico"}],
+    ],
     themeConfig: {
-        logo: "icons/small.png",
+        logo: "/small.png",
         siteTitle: "DockR Docs",
         nav: [
             {text: "About", link: "/about"},
