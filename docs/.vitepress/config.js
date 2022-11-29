@@ -4,8 +4,10 @@ export default {
     description: 'An awesome docs template built by me',
     lastUpdated: true,
     cleanUrls: 'without-subfolders',
+    srcDir: '../src',
+    outDir: './.build',
     themeConfig: {
-        logo: "/assets/small.png",
+        logo: "icons/small.png",
         siteTitle: "DockR Docs",
         nav: [
             {text: "About", link: "/about"},
