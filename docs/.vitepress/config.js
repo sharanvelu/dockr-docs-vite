@@ -7,10 +7,10 @@ export default {
     srcDir: '../src',
     outDir: './.build',
     head: [
-        ['link', {rel: "icon", sizes: "16x16", href: "small.ico"}],
+        ['link', {rel: "icon", sizes: "16x16", href: "assets/small.ico"}],
     ],
     themeConfig: {
-        logo: "/small.png",
+        logo: "/assets/small.png",
         siteTitle: "DockR Docs",
         nav: [
             {text: "About", link: "/about"},

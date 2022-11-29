@@ -7,7 +7,7 @@ hero:
   name: DockR
   text: Integration for Laravel - Docker.
   image:
-    src: /half.png
+    src: /assets/half.png
     alt: DockR logo
   tagline: DockR lets your Laravel projects run with Docker seamlessly for Local development environment.
   actions:
