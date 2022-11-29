@@ -13,5 +13,6 @@ Example :
 dockr shell
 ```
 
-> Note : `dockr shell` is an alias command for `dockr bash`.
-> 
+::: tip
+`dockr shell` is an alias command for `dockr bash`
+:::

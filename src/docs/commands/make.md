@@ -21,4 +21,6 @@ dockr make model User -mfs
 dockr make migration create_users_table --create=users
 ```
 
-> Note : You can run all the make commands using the same way.
+::: tip
+You can run all the make commands using the same way
+:::

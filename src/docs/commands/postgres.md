@@ -23,8 +23,11 @@ Example :
 dockr postgres import test_db /usr/local/lib/dump.sql
 ```
 
-> Note : No space(" ") should be present in the path_to_dump.file.
-> If there is a space in the file name, Kindly rename and try again.
+::: info Note :
+No space(" ") should be present in the path_to_dump.file.
+<br>
+If there is a space in the file name, Kindly rename and try again.
+:::
 
 ---
 
@@ -45,8 +48,11 @@ dockr postgres test_db
 dockr postgres
 ```
 
-> Note : When there is no DB specified, it will start a session without using any DB.
-> <br>When using a DB, the specified DB will be used to start a session.
+::: info Note :
+When there is no DB specified, it will start a session without using any DB.
+<br>
+When using a DB, the specified DB will be used to start a session.
+:::
 
 ---
 
@@ -102,4 +108,6 @@ dockr postgres test_db -q "select * from users;"
 dockr postgres test_db -q "select id, name from customers;"
 ```
 
-> Note : Kindly take a look at the double quotes(") at the query statements.
+::: info Note :
+Kindly take a look at the double quotes(") at the query statements.
+:::

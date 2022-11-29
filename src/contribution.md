@@ -23,7 +23,9 @@ project by providing `Pull Request`, as the changes may be a required features f
 
 ## Bug Report
 
-> Note : Before submitting a bug report, Please check whether the issue is already reported, to avoid spamming the issue tracker.
+::: info Note :
+Before submitting a bug report, Please check whether the issue is already reported, to avoid spamming the issue tracker.
+:::
 
 For a better and faster fixes, we strongly recommend updating the issue with the following
 

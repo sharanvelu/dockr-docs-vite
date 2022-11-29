@@ -38,10 +38,12 @@ dockr config get redis
 dockr config list
 ```
 
-> Note : Configurations are available for all asset containers except `Proxy`. That is you cannot disable the proxy container.<br>
-> You can add configurations to only `MySQL`, `Postgres` and `Redis`.
->
-> When no value is set for an asset, It will default to 'enable' state.
+::: info Note :
+Configurations are available for all asset containers except `Proxy`. That is you cannot disable the proxy container.<br>
+You can add configurations to only `MySQL`, `Postgres` and `Redis`.
+
+When no value is set for an asset, It will default to 'enable' state.
+:::
 
 ## Available ENV variables
 
@@ -58,11 +60,12 @@ dockr config list
 | DOCKR_OVERRIDE_ASSET_CONFIG | Used to override the config value of the asset seperated by comma(,).                  | DOCKR_OVERRIDE_ASSET_CONFIG=mysql,redis         | 
 | DOCKR_ADD_COMPOSE_FILE      | Used to add additional docker-compose-file.yml.                                        | DOCKR_ADD_COMPOSE_FILE=docker-compose-local.yml | 
 
-> Note :
-> - Every .env variable used here will be prefixed by `DOCKR_`.
-> - .env variables `DOCKR_SKIP_DB_CHECK`, `DOCKR_SKIP_ASSET` and `DOCKR_WORKER` are not boolean. Whenever the variable is declared, The related action will be handled.
-    > <br>Both `DOCKR_SKIP_DB_CHECK=1` and `DOCKR_SKIP_DB_CHECK=0` will work the same way.
-    > <br>However this will be changed in the future, so we recommend you top use `DOCKR_SKIP_DB_CHECK=1` whenever possible.
+::: info Note :
+- Every .env variable used here will be prefixed by `DOCKR_`.
+- .env variables `DOCKR_SKIP_DB_CHECK`, `DOCKR_SKIP_ASSET` and `DOCKR_WORKER` are not boolean. Whenever the variable is declared, The related action will be handled.
+    <br>Both `DOCKR_SKIP_DB_CHECK=1` and `DOCKR_SKIP_DB_CHECK=0` will work the same way.
+    <br>However this will be changed in the future, so we recommend you top use `DOCKR_SKIP_DB_CHECK=1` whenever possible.
+:::
 
 ## Detailed Explanation
 
@@ -81,9 +84,10 @@ DOCKR_SITE=dockr.test
 DOCKR_SITE=*.dockr.test
 ```
 
-> Note :
-> - You should add your site in the `/etc/hosts` file of your host machine(local machine) in order for the request to handed over to the proxy container.
-> - You can also use wildcard(`*`) as your site. But you will have to manually add all the possible values in the `/etc/hosts` file individually.
+::: info Note :
+- You should add your site in the `/etc/hosts` file of your host machine(local machine) in order for the request to handed over to the proxy container.
+- You can also use wildcard(`*`) as your site. But you will have to manually add all the possible values in the `/etc/hosts` file individually.
+:::
 
 ### DOCKR_PHP_VERSION
 
@@ -98,7 +102,9 @@ DOCKR_PHP_VERSION=8.0
 DOCKR_PHP_VERSION=7.4
 ```
 
-> Note : Kindly use only the supported `PHP versions`.
+::: info Note :
+Kindly use only the supported `PHP versions`.
+:::
 
 ### DOCKR_DOCKER_IMAGE
 
@@ -115,7 +121,9 @@ DOCKR_DOCKER_IMAGE=dockr-project:testing
 You can use both images from local and images from remote repository. This will be handled as per the Docker image
 search feature.
 
-> Note : While using `DOCKR_DOCKER_IMAGE`(Custom Docker Image), `DOCKR_PHP_VERSION` will be omitted.
+::: info Note :
+While using `DOCKR_DOCKER_IMAGE`(Custom Docker Image), `DOCKR_PHP_VERSION` will be omitted.
+:::
 
 ### DOCKR_CONTAINER_NAME
 
@@ -145,9 +153,10 @@ DOCKR_SKIP_DB_CHECK=0
 DOCKR_SKIP_DB_CHECK=1
 ```
 
-> Note : The value `0` and `1` behaves the `same`. If the variable is set, then the DockR will not check and create the database.
->
-> This behaviour will change in the future. So, we recommend to use `1` from now on.
+::: info Note :
+The value `0` and `1` behaves the `same`. If the variable is set, then the DockR will not check and create the database.
+<br>This behaviour will change in the future. So, we recommend to use `1` from now on.
+:::
 
 ### DOCKR_SKIP_ASSET
 
@@ -168,10 +177,11 @@ DOCKR_SKIP_ASSET=0
 DOCKR_SKIP_ASSET=1
 ```
 
-> Note :
-> - `Proxy` Container will not be taken into account as we think `proxy` is necessary to run the project. This might change in the future.
-> - The value `0` and `1` behaves the `same`. If the variable is set, then the DockR will not check and start the asset containers.
-    > <br>This behaviour will change in the future. So, we recommend to use `1` from now on.
+::: info Note :
+- `Proxy` Container will not be taken into account as we think `proxy` is necessary to run the project. This might change in the future.
+- The value `0` and `1` behaves the `same`. If the variable is set, then the DockR will not check and start the asset containers.
+<br>This behaviour will change in the future. So, we recommend to use `1` from now on.
+:::
 
 ### DOCKR_WORKER
 
@@ -197,7 +207,9 @@ DOCKR_WORKER=0
 DOCKR_WORKER=1
 ```
 
-> Note : `DOCKR_WORKER` variable is also same as the previous one, It behaves the same if you provide any value to it.
+::: info Note :
+`DOCKR_WORKER` variable is also same as the previous one, It behaves the same if you provide any value to it.
+:::
 
 ### DOCKR_COMPOSER_VERSION
 
@@ -238,8 +250,10 @@ DOCKR_OVERRIDE_ASSET_CONFIG=mysql,postgres,redis
 
 We have provided an option to combine additional `dockr-compose` file with the default one.<br>
 
-> When using this option, be careful to play with the value as changing some default values will break the working of `DockR` properly.<br>
-> Configurations such as `container-name`, `network`, `build`, `command`,`entrypoint`, ... will break the `DockR` functionality.
+::: warning 
+When using this option, be careful to play with the value as changing some default values will break the working of `DockR` properly.
+<br>Configurations such as `container-name`, `network`, `build`, `command`,`entrypoint`, ... will break the `DockR` functionality.
+:::
 
 Example :
 

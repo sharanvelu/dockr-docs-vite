@@ -42,8 +42,10 @@ DB_DATABASE=<test_db>
 
 For `DB_DATABASE`, use any name you want to use for your project.
 
-> Note : When running `dockr up`, Dockr will check for the specified DB.
-> <br>If none was found, DockR will create one for you with the DB name specified in `DB_DATABASE`.
+::: tip
+When running `dockr up`, Dockr will check for the specified DB.
+<br>If none was found, DockR will create one for you with the DB name specified in `DB_DATABASE`.
+:::
 
 ### Outside the docker containers
 
@@ -81,8 +83,10 @@ DB_DATABASE=<test_db>
 
 For `DB_DATABASE`, use any name you want to use for your project.
 
-> Note : When running `dockr up`, Dockr will check for the specified DB.
-> <br>If none was found, DockR will create one for you with the DB name specified in `DB_DATABASE`.
+::: tip
+When running `dockr up`, Dockr will check for the specified DB.
+<br>If none was found, DockR will create one for you with the DB name specified in `DB_DATABASE`.
+:::
 
 ### Outside the docker containers
 

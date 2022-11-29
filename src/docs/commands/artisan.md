@@ -22,4 +22,6 @@ dockr artisan storage:link
 dockr artisan optimise
 ```
 
-> Note : You can all the artisan commands in the same way.
+::: tip
+You can all the artisan commands in the same way
+:::

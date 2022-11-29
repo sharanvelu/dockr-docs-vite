@@ -21,4 +21,6 @@ dockr migrate rollback
 dockr migrate refresh
 ```
 
-> Note : You can run all the migration commands in the same way.
+::: tip
+You can run all the migration commands in the same way
+:::

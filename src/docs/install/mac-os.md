@@ -30,4 +30,6 @@ The above command will install the DockR at your `$HOME` directory and add the e
 <br>
 The executable binary will be installed in `/usr/local/bin/` dir.
 
-> Note : Root permissions are required to install and to add binary to desired location.
+::: info Note :
+Root permissions are required to install and to add binary to desired location.
+:::

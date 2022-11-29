@@ -31,4 +31,6 @@ dockr config get redis
 dockr config list
 ```
 
-> Note : When no value is set, then it will be defaulted to `enable` state
+::: info Note :
+When no value is set, then it will be defaulted to `enable` state
+:::

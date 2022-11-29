@@ -20,4 +20,6 @@ dockr composer update
 dockr composer -v
 ```
 
-> Note : You can run all the composer commands in the same way.
+::: tip
+You can run all the composer commands in the same way
+:::

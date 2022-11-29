@@ -19,4 +19,6 @@ Example :
 dockr bin phpunit
 ```
 
-> Note : You can run all the binary commands in the same way.
+::: tip
+You can run all the binary commands in the same way.
+:::
